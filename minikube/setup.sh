@@ -12,4 +12,6 @@ curl -s https://gitlab.com/thecloudcareers/opensource/-/raw/master/lab-tools/ter
 curl -s https://gitlab.com/thecloudcareers/opensource/-/raw/master/lab-tools/terraform/k8-stack/install.sh | sudo bash
 rm -rf .terraform*
 terraform init
+terraform plan 
+echo ".......... Running Terraform Apply ..........."
 terraform apply -auto-approve -lock=false
