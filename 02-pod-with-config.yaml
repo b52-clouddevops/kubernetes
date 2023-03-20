@@ -5,7 +5,8 @@ metadata:
 spec:
   containers:
   - name: centos-container  
-    image: centos:7  
+    image: centos:7
+    command: ["sleep" , "10000"]
     env:
     - name: URL
       value: www.devops.com 
