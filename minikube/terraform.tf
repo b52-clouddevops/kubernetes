@@ -7,7 +7,7 @@ module "minikube" {
   ssh_public_key    = "~/.ssh/id_rsa.pub"
   aws_subnet_id     = module.vpc.public_subnets[0]
   hosted_zone         = var.HOSTED_ZONE
-  hosted_zone_private = false
+  hosted_zone_private = true
 
   tags = {
     Application = "Minikube"
