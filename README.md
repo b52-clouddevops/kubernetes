@@ -20,6 +20,18 @@ Syntax :  kubectl action resources
 * kubectl --help 
 ```
 
+How do you deploy a kubernetes resource ?
+
+```
+kubectl apply -f fileName.yml 
+```
+
+How do you delete a kubernetes resource ?
+
+```
+kubectl delete -f fileName.yml 
+```
+
 ### PS : 
 
 ```
