@@ -7,4 +7,20 @@ spec:
   - name: nginx-container
     image: nginx:1.14.2
     # ports:
-    # - containerPort: 80
+    # - containerPort: 80 
+
+--- 
+# This is an example of multi-container pod
+
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: multi-pod 
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx 
+  - name: alpine-container
+    image: alpine 
+    # ports:
+    # - containerPort: 80 
