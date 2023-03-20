@@ -12,3 +12,9 @@ spec:
       value: www.devops.com 
     - name: DOMAIN
       value: roboshop.internal
+    - name: MONGO_URL 
+      value: "http://mongo-asdfsdaf.abc.com" 
+    - name: USERNAME 
+      value: admin 
+    - name: TIMEOUT
+      value: "10"
