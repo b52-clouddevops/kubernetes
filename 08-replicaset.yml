@@ -9,7 +9,7 @@ metadata:
     tier: frontend
 spec:
   # modify replicas according to your case
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       tier: frontend
@@ -20,4 +20,10 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: nginx:latest 
+
+# Replicaset's main purpose is to maintain the specified number of puds running at any time!!!
+
+# But the limitations, is Replciaset won't allow you to upgrade from one version to another version.
+
+# You can scale out os scane-in the number of replicas either declaratively or imperatively
