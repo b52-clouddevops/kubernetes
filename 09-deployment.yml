@@ -28,3 +28,20 @@ spec:
 # Deployment Strategies in deployment set is : 
   # 1) Recreate 
   # 2) Rolling Update 
+
+--- 
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-deployment-svc
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+# If you don't mention the type, it's will be of type ClusterIP.
+# ClusterIP should only be used, when you want to access it only with in the cluster.

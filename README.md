@@ -58,7 +58,7 @@ Kubernetes resources are indendation specific and are idempotent.
         b) Deployments
         c) DaemonSets
         d) StatefulSets
-        
+
     7) Health Checks
         a) Readiness Probe 
         b) Liveliness Probe 
@@ -67,6 +67,7 @@ Kubernetes resources are indendation specific and are idempotent.
         a) Requests
         b) Limits
     9) NameSpace 
+    
    10) Services
         a) ClusterIP        ( Limits the visibility of the service only with in the cluster )
         b) LoadBalancer     ( Gives the visbility to public, outside of the cluster )
