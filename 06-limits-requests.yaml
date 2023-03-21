@@ -12,4 +12,22 @@ spec:
         cpu: "50m"
       limits:
         memory: "128Mi"
-        cpu: "100m"
+        cpu: "100m" 
+
+--- 
+
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: bib-nginx-pod 
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.14.2
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "4000m"
+      limits:
+        memory: "128Mi"
+        cpu: "8000m"
