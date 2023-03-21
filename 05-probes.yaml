@@ -1,5 +1,4 @@
 # Example on probes : 
-
 apiVersion: v1
 kind: Pod
 metadata:
@@ -13,8 +12,7 @@ spec:
     args:
     - /bin/sh
     - -c
-    - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600
-    
+    - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600    
     readinessProbe:
       exec:
         command:
