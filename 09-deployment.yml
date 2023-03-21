@@ -6,7 +6,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: nginx
@@ -17,6 +17,12 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
+        image: nginx:1.14.3
         ports:
-        - containerPort: 80
+        - containerPort: 80 
+
+# By default, the update the strategy in DEPLOYMENT SET is of type ROLLING UPDATE with with 25%
+
+# Deployment Strategies in deployment set is : 
+  # 1) Recreate 
+  # 2) Rolling Update 
