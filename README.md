@@ -115,6 +115,7 @@ t3.Medium : 2 CPU , 4 GB Memory
 
 
 ### Pod Priority & Preemption 
+
 ```
 Pods can have priority. Priority indicates the importance of a Pod relative to other Pods. If a Pod cannot be scheduled, the scheduler tries to preempt (evict) lower priority Pods to make scheduling of the pending Pod possible.
 
@@ -122,6 +123,8 @@ Pob Preemption: Allows Cluster to evict the low priority pods, so that they can 
 
   
   --> The higher the value, the higher the priority
+
+Ref : https://mohaamer5.medium.com/kubernetes-pod-priority-and-preemption-943c58aee07d
 
 ```
 

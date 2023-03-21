@@ -1,0 +1,16 @@
+# Creates a nameSpace 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
+
+--- 
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: dev-pod 
+  namespace: dev
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.14.2
