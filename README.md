@@ -58,6 +58,7 @@ Kubernetes resources are indendation specific and are idempotent.
         b) Deployments
         c) DaemonSets
         d) StatefulSets
+        
     7) Health Checks
         a) Readiness Probe 
         b) Liveliness Probe 
