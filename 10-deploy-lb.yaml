@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: httpd
+        image: nginx:latest
         ports:
         - containerPort: 80 
 --- 
@@ -29,7 +29,7 @@ kind: Service
 metadata:
   name: nginx-deployment-svc
 spec:
-  type: LoadBalancer
+  # type: LoadBalancer
   selector:
     app: nginx
   ports:
