@@ -66,6 +66,7 @@ Kubernetes resources are indendation specific and are idempotent.
     8) Resource Utilization   ( CPU, Memory, Page )
         a) Requests
         b) Limits
+
     9) NameSpace 
     
    10) Services
@@ -73,6 +74,8 @@ Kubernetes resources are indendation specific and are idempotent.
         b) LoadBalancer     ( Gives the visbility to public, outside of the cluster )
         c) NodePort         ( Opens the port directly on the NODE )
         d) External         ( It's just like a CNAME to a long name to service in the K8 Cluster )
+
+    11) Pod Priority & Pre-emption 
 
 
 ### What is a page: 
