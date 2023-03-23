@@ -237,3 +237,16 @@ deployment can be done in 2 ways  :
     1) Rolling update 
     2) Recreate 
 ``` 
+
+
+### Ingress Controller Installation 
+
+```
+    $ git clone https://github.com/nginxinc/kubernetes-ingress.git --branch v3.0.2
+    $ cd kubernetes-ingress/deployments/helm-chart
+    $ helm repo add nginx-stable https://helm.nginx.com/stable
+    $ helm repo update
+    $ helm install ng-ingress  nginx-stable/nginx-ingress
+    $ helm list
+
+``` 
